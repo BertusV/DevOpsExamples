@@ -25,9 +25,9 @@ steps:
   displayName: 'NuGet restore MyDocProcApp'
   inputs:
     command: 'restore'
-    projects: $(consoleProjectPath)
+    projects: '$(consoleProjectPath)'
     feedsToUse: 'config'
-    nugetConfigPath: $(consoleNugetConfigPath)
+    nugetConfigPath: '$(consoleNugetConfigPath)'
     externalFeedCredentials: 'TelerikFeed'
 
 # Step 2. Build the project
